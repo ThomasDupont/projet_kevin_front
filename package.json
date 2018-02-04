@@ -2,17 +2,26 @@
   "name": "projet-kevinou",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng build --aot -prod && node app.js",
+    "_start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "grunt sass:production && ng build --aot -prod"
+  },
+  "engines" : {
+    "node": "~8.9.0",
+    "npm": "~3.10.5"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.0.3",
     "@angular/animations": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
@@ -22,6 +31,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
