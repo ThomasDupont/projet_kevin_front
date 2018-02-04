@@ -5,13 +5,13 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng build --aot -prod && node app.js",
+    "start": "node app.js",
     "_start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "_postinstall": "grunt sass:production && ng build --aot -prod"
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
     "node": "~8.9.0",
