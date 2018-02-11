@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-fonts-details',
   templateUrl: './fonts-details.component.html',
-  styleUrls: ['./fonts-details.component.scss']
+  styleUrls: ['.././details.component.scss']
 })
 export class FontsDetailsComponent implements OnInit {
 

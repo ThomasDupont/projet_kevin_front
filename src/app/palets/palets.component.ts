@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-palets',
   templateUrl: './palets.component.html',
-  styleUrls: ['./palets.component.scss']
+  styleUrls: ['.././details.component.scss']
 })
-export class PaletsComponent implements OnInit {
+export class PaletsDetailsComponent implements OnInit {
 
   constructor() { }
 
