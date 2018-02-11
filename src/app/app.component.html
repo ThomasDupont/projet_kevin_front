@@ -1,15 +1,22 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
+<!--the content below is only a placeholder and can be replaced.-->
 
-<h2>Navigation bar: </h2>
-<nav>
-    <h2><a rel="noopener" href="/home">Home</a></h2>
-    <h2><a rel="noopener" href="/profile">Profile</a></h2>
-    <h2><a rel="noopener" href="/about">About</a></h2>
+<!-- header -->
+<header role="banner">
+    <img src="assets/img/logos/logo_creadolphin.svg" alt="Logo"/>
+    <ul>
+        <a href="/web-design"><li>WEB DESIGN</li></a>
+        <a href="/ui-design"><li>UI DESIGN</li></a>
+        <a href="/colors"><li>COLORS</li></a>
+        <a href="/fonts"><li>FONTS</li></a>
+    </ul>
+    <button id="signup">Sign Up</button>
+    <button id="login">Login</button>
+</header>
+
+<!--<nav>
+    <h2><a rel="noopener" href="/home">home</a></h2>
+    <h2><a rel="noopener" href="/profile">profile</a></h2>
+    <h2><a rel="noopener" href="/about">about</a></h2>
     <h2><a rel="noopener" href="/colors">colors</a></h2>
     <h2><a rel="noopener" href="/fonts">fonts</a></h2>
     <h2><a rel="noopener" href="/fonts-details">fonts-details</a></h2>
@@ -21,6 +28,11 @@
     <h2><a rel="noopener" href="/ui-design-details">ui-design-details</a></h2>
     <h2><a rel="noopener" href="/web-design">web-design</a></h2>
     <h2><a rel="noopener" href="/web-design-details">web-design-details</a></h2>
-</nav>
+</nav>-->
 <router-outlet></router-outlet>
 
+<!-- footer -->
+<footer role="contentinfo">
+    <span>&copy; Project Name 2018  -  <a href="">TOS & Privacy Policy</a></span>
+    <a href="https://www.instagram.com/creadolphin/?hl=fr" target="_blank"><img src="assets/img/icons/instagram.png" alt="Instagram Link"/></a>
+</footer>
