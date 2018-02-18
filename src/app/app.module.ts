@@ -21,7 +21,7 @@ import { WebDesignComponent } from './web-design/web-design.component';
 import { SignInUpComponent } from './sign-in-up/sign-in-up.component';
 import { LibraryComponent } from './library/library.component';
 import { ApolloService } from "./../models/apollo.service";
-import { DataService } from "../models/data.service";
+import { DataService } from "./../models/data.service";
 
 @NgModule({
     declarations: [
