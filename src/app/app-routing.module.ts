@@ -26,10 +26,10 @@ const routes: Routes = [
     { path: 'library', component: LibraryComponent },
     { path: 'palets', component: PaletsComponent },
     { path: 'sign-in-up', component: SignInUpComponent },
-    { path: 'ui-design', component: UiDesignComponent },
-    { path: 'ui-design-details', component: UiDesignDetailsComponent },
-    { path: 'web-design', component: WebDesignComponent },
-    { path: 'web-design-details', component: WebDesignDetailsComponent },
+    { path: 'web-design/details/:id', component: WebDesignDetailsComponent },
+    { path: 'ui-design/details/:id', component: UiDesignDetailsComponent },
+    { path: 'ui-design', component: UiDesignComponent},
+    { path: 'web-design', component: WebDesignComponent},
 ];
 
 @NgModule({

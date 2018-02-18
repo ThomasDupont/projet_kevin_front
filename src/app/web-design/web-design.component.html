@@ -2,11 +2,23 @@
 <content role="main">
 
     <!-- title -->
-    <h1>WEB DESIGN</h1>
+    <h1>{{title}}</h1>
     <span class="subtiles">Inspire yourself from the most beautiful web designs</span>
 
     <!-- feed -->
     <ul class="feed">
+        <a *ngFor="let item of webdesign" (click)="getDetail(item._id)">
+            <li>
+                <div>
+                    <img src="{{item.screenPath[0]}}" alt=""/>
+                    <a href="{{item.websiteLink}}" target="_blank">{{item.websiteLink}}<div>
+                        <img src="assets/img/icons/website_link.svg" alt="Website Link"/>
+                    </div></a>
+                </div>
+                <span>{{item.title}}</span>
+            </li>
+        </a>
+        <!--
         <a href="#">
             <li>
                 <div>
@@ -40,6 +52,7 @@
                 <span>The Glyph Studio</span>
             </li>
         </a>
+        -->
     </ul>
-    <button class="load_more">Load More</button>
+    <button (click)="loadMore()" class="load_more">Load More</button>
 </content>
