@@ -3,6 +3,7 @@ import { HttpLink } from 'apollo-angular-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { Injectable } from '@angular/core';
 import gql from 'graphql-tag';
+import { environment} from "../environments/environment";
 
 @Injectable()
 export class ApolloService {
@@ -11,7 +12,7 @@ export class ApolloService {
         httpLink: HttpLink
     ) {
         apollo.create({
-            link: httpLink.create({ uri: 'http://localhost:3000/graphql' }),
+            link: httpLink.create({ uri: environment.api_url }),
             cache: new InMemoryCache()
         });
     }
